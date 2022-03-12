@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://entities/actors/HueorphBeige.tscn" type="PackedScene" id=1]
+[ext_resource path="res://assets/tilesets/GrassTileset.tres" type="TileSet" id=2]
+
+[node name="Level0" type="Node2D"]
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="HueorphBeige" parent="YSort" instance=ExtResource( 1 )]
+position = Vector2( 139, 550 )
+collision_layer = 2
+
+[node name="TileMap" type="TileMap" parent="YSort"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 70, 70 )
+collision_use_kinematic = true
+collision_mask = 0
+format = 1
+tile_data = PoolIntArray( 196608, 14, 0, 262144, 14, 0, 327680, 14, 0, 327691, 16, 0, 327692, 16, 0, 327693, 16, 0, 393216, 14, 0, 458752, 14, 0, 458755, 19, 0, 458758, 17, 0, 458759, 17, 0, 458760, 18, 0, 458761, 17, 0, 524288, 14, 0, 524289, 1, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0 )
