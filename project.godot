@@ -24,6 +24,11 @@ config/name="Hueorph"
 run/main_scene="res://entities/levels/Level0.tscn"
 config/icon="res://icon.png"
 
+[display]
+
+window/size/width=1280
+window/size/height=720
+
 [input]
 
 ui_left={

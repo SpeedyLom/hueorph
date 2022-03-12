@@ -1,20 +1,35 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://entities/actors/HueorphBeige.tscn" type="PackedScene" id=1]
 [ext_resource path="res://assets/tilesets/GrassTileset.tres" type="TileSet" id=2]
+[ext_resource path="res://assets/sprites/backgrounds/backgroundColorGrass.png" type="Texture" id=3]
 
 [node name="Level0" type="Node2D"]
 
-[node name="YSort" type="YSort" parent="."]
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 
-[node name="HueorphBeige" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 139, 550 )
-collision_layer = 2
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.3, 1 )
 
-[node name="TileMap" type="TileMap" parent="YSort"]
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( 464, -200 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 2048, 1024 )
+
+[node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 2 )
 cell_size = Vector2( 70, 70 )
 collision_use_kinematic = true
 collision_mask = 0
 format = 1
-tile_data = PoolIntArray( 196608, 14, 0, 262144, 14, 0, 327680, 14, 0, 327691, 16, 0, 327692, 16, 0, 327693, 16, 0, 393216, 14, 0, 458752, 14, 0, 458755, 19, 0, 458758, 17, 0, 458759, 17, 0, 458760, 18, 0, 458761, 17, 0, 524288, 14, 0, 524289, 1, 0, 524290, 1, 0, 524291, 1, 0, 524292, 1, 0, 524293, 1, 0, 524294, 1, 0, 524295, 1, 0, 524296, 1, 0, 524297, 1, 0, 524298, 1, 0, 524299, 1, 0, 524300, 1, 0, 524301, 1, 0, 524302, 1, 0 )
+tile_data = PoolIntArray( -262151, 1, 0, -262150, 1, 0, -262149, 3, 0, -196615, 14, 0, -196614, 14, 0, -196613, 14, 0, -131079, 14, 0, -131078, 14, 0, -131077, 14, 0, -65543, 14, 0, -65542, 14, 0, -65541, 14, 0, -131058, 19, 0, -7, 14, 0, -6, 14, 0, -5, 14, 0, -4, 3, 0, -65535, 19, 0, -65533, 17, 0, -65532, 17, 0, -65531, 18, 0, -65530, 17, 0, -65529, 18, 0, -65525, 5, 0, -65524, 1, 0, -65523, 1, 0, -65522, 1, 0, -65521, 1, 0, -65520, 3, 0, 65529, 14, 0, 65530, 14, 0, 65531, 14, 0, 65532, 22, 0, 65533, 1, 0, 65534, 1, 0, 65535, 1, 0, 0, 1, 0, 1, 1, 0, 2, 1, 0, 3, 2, 0, 4, 16, 0, 5, 16, 0, 6, 16, 0, 7, 0, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 4, 0, 12, 14, 0, 13, 14, 0, 14, 14, 0, 15, 14, 0, 16, 22, 0, 17, 1, 0, 18, 1, 0, 19, 1, 0, 20, 1, 0, 21, 1, 0, 131065, 14, 0, 131066, 14, 0, 131067, 14, 0, 131068, 14, 0, 131069, 14, 0, 131070, 14, 0, 131071, 14, 0, 65536, 14, 0, 65537, 14, 0, 65538, 14, 0, 65539, 14, 0, 65540, 24, 0, 65541, 24, 0, 65542, 24, 0, 65543, 14, 0, 65544, 14, 0, 65545, 14, 0, 65546, 14, 0, 65547, 14, 0, 65548, 14, 0, 65549, 14, 0, 65550, 14, 0, 65551, 14, 0, 65552, 14, 0, 65553, 14, 0, 65554, 14, 0, 65555, 14, 0, 65556, 14, 0, 65557, 14, 0, 196601, 14, 0, 196602, 14, 0, 196603, 14, 0, 196604, 14, 0, 196605, 14, 0, 196606, 14, 0, 196607, 14, 0, 131072, 14, 0, 131073, 14, 0, 131074, 14, 0, 131075, 14, 0, 131076, 23, 0, 131077, 23, 0, 131078, 23, 0, 131079, 14, 0, 131080, 14, 0, 131081, 14, 0, 131082, 14, 0, 131083, 14, 0, 131084, 14, 0, 131085, 14, 0, 131086, 14, 0, 131087, 14, 0, 131088, 14, 0, 131089, 14, 0, 131090, 14, 0, 131091, 14, 0, 131092, 14, 0, 131093, 14, 0, 262137, 14, 0, 262138, 14, 0, 262139, 14, 0, 262140, 14, 0, 262141, 14, 0, 262142, 14, 0, 262143, 14, 0, 196608, 14, 0, 196609, 14, 0, 196610, 14, 0, 196611, 14, 0, 196612, 14, 0, 196613, 14, 0, 196614, 14, 0, 196615, 14, 0, 196616, 14, 0, 196617, 14, 0, 196618, 14, 0 )
+
+[node name="HueorphBeige" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, -10 )
+collision_layer = 2
+
+[node name="Camera2D" type="Camera2D" parent="HueorphBeige"]
+position = Vector2( 0, -200 )
+current = true
+limit_left = -256

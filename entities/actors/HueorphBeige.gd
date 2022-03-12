@@ -7,10 +7,10 @@ enum {
 }
 
 export var acceleration: int = 800
+export var gravity: int = 500
 export var friction: int = 1800
 export var run_speed: int = 380
 
-var _input: Object = Input
 var _state: int = WALK
 var _velocity: Vector2 = Vector2()
 
@@ -19,14 +19,18 @@ onready var _animated_sprite: AnimatedSprite = $AnimatedSprite
 
 func _physics_process(delta: float) -> void:
 	match _state:
+		IDLE:
+			_idle(delta)
 		WALK:
 			_walk(delta)
 
+func _idle(delta: float) -> void:
+	_move(delta)
 
 func _walk(delta: float) -> void:
 	_set_walk_velocity_by_input(delta)
 	_animate_walk_by_velocity()
-	_move()
+	_move(delta)
 
 
 func _set_walk_velocity_by_input(delta: float) -> void:
@@ -60,18 +64,19 @@ func _walking(_input_vector: Vector2) -> bool:
 
 
 func _animate_walk_by_velocity() -> void:
-	if _velocity:
+	if _velocity.x:
 		_animated_sprite.flip_h = _velocity.x < 0
 
 	_animated_sprite.animation = _get_animation_name_from_velocity()
 
 
 func _get_animation_name_from_velocity() -> String:
-	if _velocity:
+	if _velocity.x:
 		return "walk"
 
 	return "idle"
 
 
-func _move() -> void:
-	_velocity = move_and_slide(_velocity)
+func _move(delta: float) -> void:
+	_velocity.y += delta * gravity
+	_velocity = move_and_slide(_velocity, Vector2(0, -1))

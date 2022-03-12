@@ -25,6 +25,48 @@ region_rect = Rect2( 504, 576, 70, 70 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile2/StaticBody2D"]
 polygon = PoolVector2Array( 35, -35, -35, -35, -35, 35, 35, 35 )
 
+[node name="Tile23" type="Sprite" parent="."]
+position = Vector2( 142, 290 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 504, 864, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tile23"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile23/StaticBody2D"]
+polygon = PoolVector2Array( 35, -35, -35, -35, -35, 35, 35, 35 )
+
+[node name="Tile25" type="Sprite" parent="."]
+position = Vector2( 288, 291 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 504, 216, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tile25"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile25/StaticBody2D"]
+polygon = PoolVector2Array( 35, -35, -35, -35, -35, 35, 35, 35 )
+
+[node name="Tile24" type="Sprite" parent="."]
+position = Vector2( 216, 291 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 432, 576, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Tile24"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile24/StaticBody2D"]
+polygon = PoolVector2Array( 35, 35, 35, -2, 18, -6, -5, -1, -24, 2, -35, -2, -35, 35 )
+
 [node name="Tile3" type="Sprite" parent="."]
 position = Vector2( 144, 0 )
 texture = ExtResource( 1 )
@@ -201,7 +243,7 @@ polygon = PoolVector2Array( 29, -35, -28, -35, -34, -31, -35, 29, -30, 35, 29, 3
 position = Vector2( 70, 217 )
 texture = ExtResource( 1 )
 region_enabled = true
-region_rect = Rect2( 288, 720, 70, 70 )
+region_rect = Rect2( 288, 764, 70, 26 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -209,6 +251,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="Tile17"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Tile17/StaticBody2D"]
+position = Vector2( 0, -22 )
 polygon = PoolVector2Array( -35, 16, -30, 10, 29, 10, 35, 15, 35, 28, 30, 34, -29, 34, -35, 28 )
 
 [node name="Tile18" type="Sprite" parent="."]
