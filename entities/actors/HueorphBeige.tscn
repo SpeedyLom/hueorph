@@ -22,16 +22,6 @@ animations = [ {
 "name": "duck",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 4 ) ],
-"loop": true,
-"name": "jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "walk",
-"speed": 6.0
-}, {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "climb",
@@ -41,6 +31,16 @@ animations = [ {
 "loop": true,
 "name": "hurt",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "walk",
+"speed": 6.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -49,7 +49,6 @@ height = 36.0
 
 [node name="HueorphBeige" type="KinematicBody2D"]
 script = ExtResource( 9 )
-run_speed = 360
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -36 )
