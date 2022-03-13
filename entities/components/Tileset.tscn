@@ -27,9 +27,48 @@ region_rect = Rect2( 504, 576, 70, 70 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtCentre/StaticBody2D"]
 polygon = PoolVector2Array( 35, -35, -35, -35, -35, 35, 35, 35 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="GrassDirtRight" type="Sprite" parent="."]
+position = Vector2( 144, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 504, 504, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtRight"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtRight/StaticBody2D"]
+polygon = PoolVector2Array( -35, -35, 29, -35, 35, -30, 35, 28, 31, 35, -35, 35 )
+
+[node name="GrassRound" type="Sprite" parent="."]
+position = Vector2( 215, -1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 792, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassRound"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRound/StaticBody2D"]
+polygon = PoolVector2Array( 28, -36, -28, -36, -35, -31, -35, 27, -30, 34, 28, 34, 35, 29, 35, -30 )
+
+[node name="GrassDirtSlopeLeft" type="Sprite" parent="."]
+position = Vector2( 287, 0 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 72, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtSlopeLeft"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtSlopeLeft/StaticBody2D"]
+polygon = PoolVector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
 
 [node name="GrassDirtSlopeRight" type="Sprite" parent="."]
-position = Vector2( 142, 290 )
+position = Vector2( 362, 0 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 504, 864, 70, 70 )
@@ -41,6 +80,198 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtSlopeRight/StaticBody2D"]
 polygon = PoolVector2Array( 35, -35, -35, -35, -35, 35, 35, 35 )
+
+[node name="GrassDirtSteepSlopeLeft" type="Sprite" parent="."]
+position = Vector2( 452, 2 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 144, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtSteepSlopeLeft"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtSteepSlopeLeft/StaticBody2D"]
+polygon = PoolVector2Array( 34, -34, -35, 35, 34, 35 )
+
+[node name="GrassDirtSteepSlopeRight" type="Sprite" parent="."]
+position = Vector2( 527, 1 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 0, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtSteepSlopeRight"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtSteepSlopeRight/StaticBody2D"]
+polygon = PoolVector2Array( -35, -35, -35, 35, 35, 35 )
+
+[node name="GrassPlatformLeft" type="Sprite" parent="."]
+position = Vector2( -78, 72 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 360, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassPlatformLeft"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassPlatformLeft/StaticBody2D"]
+polygon = PoolVector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
+
+[node name="GrassPlatformRight" type="Sprite" parent="."]
+position = Vector2( 72, 73 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 216, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassPlatformRight"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassPlatformRight/StaticBody2D"]
+polygon = PoolVector2Array( -36, -35, -36, 5, 28, 5, 34, 0, 34, -29, 28, -35 )
+
+[node name="GrassPlatformCentre" type="Sprite" parent="."]
+position = Vector2( -3, 73 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 288, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassPlatformCentre"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassPlatformCentre/StaticBody2D"]
+polygon = PoolVector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
+
+[node name="GrassPlatformRound" type="Sprite" parent="."]
+position = Vector2( 145, 74 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 432, 70, 70 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassPlatformRound"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassPlatformRound/StaticBody2D"]
+polygon = PoolVector2Array( 30, -35, 35, -30, 35, -1, 30, 5, -29, 5, -35, 0, -35, -29, -30, -35 )
+
+[node name="GrassRoundRight" type="Sprite" parent="."]
+position = Vector2( 531, 79 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 576, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassRoundRight"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRoundRight/StaticBody2D"]
+polygon = PoolVector2Array( -36, -36, -36, 34, -14, 31, 6, 25, 17, 19, 27, 9, 33, -4, 34, -12, 34, -30, 28, -36 )
+
+[node name="GrassRoundLeft" type="Sprite" parent="."]
+position = Vector2( 449, 79 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 720, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassRoundLeft"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRoundLeft/StaticBody2D"]
+polygon = PoolVector2Array( 35, -36, -30, -36, -35, -31, -35, -10, -32, 0, -26, 12, -15, 20, -2, 27, 18, 32, 35, 34 )
+
+[node name="Dirt" type="Sprite" parent="."]
+position = Vector2( 217, 73 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 576, 864, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Dirt"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dirt/StaticBody2D"]
+polygon = PoolVector2Array( 35, -35, -35, -35, -35, 35, 35, 35 )
+
+[node name="GrassDirtRound" type="Sprite" parent="."]
+position = Vector2( 289, 73 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 648, 0, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtRound"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtRound/StaticBody2D"]
+polygon = PoolVector2Array( 29, -35, -28, -35, -34, -31, -35, 29, -30, 35, 29, 35, 35, 30, 35, -29 )
+
+[node name="LogPlatform" type="Sprite" parent="."]
+position = Vector2( -8, 155 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 764, 70, 26 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="StaticBody2D" type="StaticBody2D" parent="LogPlatform"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LogPlatform/StaticBody2D"]
+position = Vector2( 0, -22 )
+polygon = PoolVector2Array( -35, 16, -30, 10, 29, 10, 35, 15, 35, 28, 30, 34, -29, 34, -35, 28 )
+
+[node name="Fence" type="Sprite" parent="."]
+position = Vector2( -9, 210 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 648, 144, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="FenceBroken" type="Sprite" parent="."]
+position = Vector2( 68, 212 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 648, 72, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SignRight" type="Sprite" parent="."]
+position = Vector2( 288, 216 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 216, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SignLeft" type="Sprite" parent="."]
+position = Vector2( 144, 218 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 288, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="SignExit" type="Sprite" parent="."]
+position = Vector2( 216, 218 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 288, 360, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="RopeHoizontal" type="Sprite" parent="."]
+position = Vector2( 72, 145 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 432, 0, 70, 70 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="WaterFull" type="Sprite" parent="."]
 position = Vector2( 288, 291 )
@@ -69,220 +300,3 @@ __meta__ = {
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="WaterWaves/StaticBody2D"]
 polygon = PoolVector2Array( 35, 35, 35, -2, 18, -6, -5, -1, -24, 2, -35, -2, -35, 35 )
-
-[node name="GrassDirtRight" type="Sprite" parent="."]
-position = Vector2( 144, 0 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 504, 504, 70, 70 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtRight"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtRight/StaticBody2D"]
-polygon = PoolVector2Array( -35, -35, 29, -35, 35, -30, 35, 28, 31, 35, -35, 35 )
-
-[node name="GrassDirtSteepSlopeRight" type="Sprite" parent="."]
-position = Vector2( 216, 0 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 0, 70, 70 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtSteepSlopeRight"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtSteepSlopeRight/StaticBody2D"]
-polygon = PoolVector2Array( -35, -35, -35, 35, 35, 35 )
-
-[node name="GrassDirtSlopeLeft" type="Sprite" parent="."]
-position = Vector2( 288, 0 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 72, 70, 70 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtSlopeLeft"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtSlopeLeft/StaticBody2D"]
-polygon = PoolVector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
-
-[node name="GrassDirtSteepSlopeLeft" type="Sprite" parent="."]
-position = Vector2( 0, 73 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 144, 70, 70 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtSteepSlopeLeft"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtSteepSlopeLeft/StaticBody2D"]
-polygon = PoolVector2Array( 34, -34, -35, 35, 34, 35 )
-
-[node name="GrassPlatformRight" type="Sprite" parent="."]
-position = Vector2( 72, 73 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 216, 70, 70 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassPlatformRight"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassPlatformRight/StaticBody2D"]
-polygon = PoolVector2Array( -36, -35, -36, 5, 28, 5, 34, 0, 34, -29, 28, -35 )
-
-[node name="GrassPlatformCentre" type="Sprite" parent="."]
-position = Vector2( 144, 73 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 288, 70, 70 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassPlatformCentre"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassPlatformCentre/StaticBody2D"]
-polygon = PoolVector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
-
-[node name="GrassPlatformRound" type="Sprite" parent="."]
-position = Vector2( 216, 73 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 432, 70, 70 )
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassPlatformRound"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassPlatformRound/StaticBody2D"]
-polygon = PoolVector2Array( 30, -35, 35, -30, 35, -1, 30, 5, -29, 5, -35, 0, -35, -29, -30, -35 )
-
-[node name="GrassRoundRight" type="Sprite" parent="."]
-position = Vector2( -1, 145 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 576, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassRoundRight"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRoundRight/StaticBody2D"]
-polygon = PoolVector2Array( -36, -36, -36, 34, -14, 31, 6, 25, 17, 19, 27, 9, 33, -4, 34, -12, 34, -30, 28, -36 )
-
-[node name="GrassRoundLeft" type="Sprite" parent="."]
-position = Vector2( 144, 145 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 720, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassRoundLeft"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRoundLeft/StaticBody2D"]
-polygon = PoolVector2Array( 35, -36, -30, -36, -35, -31, -35, -10, -32, 0, -26, 12, -15, 20, -2, 27, 18, 32, 35, 34 )
-
-[node name="GrassRound" type="Sprite" parent="."]
-position = Vector2( 217, 145 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 792, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassRound"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRound/StaticBody2D"]
-polygon = PoolVector2Array( 28, -36, -28, -36, -35, -31, -35, 27, -30, 34, 28, 34, 35, 29, 35, -30 )
-
-[node name="Dirt" type="Sprite" parent="."]
-position = Vector2( 288, 145 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 576, 864, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Dirt"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Dirt/StaticBody2D"]
-polygon = PoolVector2Array( 35, -35, -35, -35, -35, 35, 35, 35 )
-
-[node name="GrassDirtRound" type="Sprite" parent="."]
-position = Vector2( -2, 217 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 648, 0, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="GrassDirtRound"]
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassDirtRound/StaticBody2D"]
-polygon = PoolVector2Array( 29, -35, -28, -35, -34, -31, -35, 29, -30, 35, 29, 35, 35, 30, 35, -29 )
-
-[node name="LogPlatform" type="Sprite" parent="."]
-position = Vector2( 70, 217 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 288, 764, 70, 26 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="LogPlatform"]
-visible = false
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LogPlatform/StaticBody2D"]
-position = Vector2( 0, -22 )
-polygon = PoolVector2Array( -35, 16, -30, 10, 29, 10, 35, 15, 35, 28, 30, 34, -29, 34, -35, 28 )
-
-[node name="Fence" type="Sprite" parent="."]
-position = Vector2( 215, 216 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 648, 144, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="FenceBroken" type="Sprite" parent="."]
-position = Vector2( 143, 216 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 648, 72, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="SignRight" type="Sprite" parent="."]
-position = Vector2( 288, 216 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 288, 216, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="SignLeft" type="Sprite" parent="."]
-position = Vector2( -2, 289 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 288, 288, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="SignExit" type="Sprite" parent="."]
-position = Vector2( 68, 290 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 288, 360, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
-
-[node name="RopeHoizontal" type="Sprite" parent="."]
-position = Vector2( 72, 145 )
-texture = ExtResource( 1 )
-region_enabled = true
-region_rect = Rect2( 432, 0, 70, 70 )
-__meta__ = {
-"_edit_group_": true
-}
