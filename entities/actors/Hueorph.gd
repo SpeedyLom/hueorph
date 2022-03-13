@@ -3,10 +3,11 @@ extends KinematicBody2D
 const Poof := preload("res://entities/components/Poof.tscn")
 
 export (int) var _run_speed = 250
-export (int) var _jump_speed = -400
+export (int) var _base_jump_speed = -400
 export (int) var _gravity = 1200
 
 var _velocity = Vector2()
+var _jump_speed = 0
 var _jumping = false
 
 onready var _animated_sprite: AnimatedSprite = $AnimatedSpriteBeige
@@ -16,6 +17,9 @@ onready var _animated_sprite_green: AnimatedSprite = $AnimatedSpriteGreen
 onready var _animated_sprite_pink: AnimatedSprite = $AnimatedSpritePink
 
 signal combine(colour)
+
+func _ready() -> void:
+	_jump_speed = _base_jump_speed
 
 func get_input():
 	_velocity.x = 0
@@ -54,10 +58,13 @@ func _on_Hueorph_combine(colour: String, hexadecimal: String):
 	match(colour):
 		'blue':
 			_animated_sprite = _animated_sprite_blue
+			_jump_speed = _base_jump_speed
 		'green':
 			_animated_sprite = _animated_sprite_green
+			_jump_speed = - 800
 		'pink':
 			_animated_sprite = _animated_sprite_pink
+			_jump_speed = _base_jump_speed
 
 	_animated_sprite.visible = true
 
