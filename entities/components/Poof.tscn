@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/sprites/effects/White puff/whitePuff01.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/effects/White puff/whitePuff06.png" type="Texture" id=7]
+[ext_resource path="res://entities/components/Poof.gd" type="Script" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "poof",
+"speed": 10.0
+} ]
+
+[node name="AnimatedSprite" type="AnimatedSprite"]
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 1 )
+animation = "poof"
+script = ExtResource( 8 )

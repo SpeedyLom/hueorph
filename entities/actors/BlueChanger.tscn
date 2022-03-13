@@ -5,6 +5,7 @@
 
 [node name="BlueChanger" instance=ExtResource( 1 )]
 colour = "blue"
+hexadecimal = "#a3c3eb"
 
 [node name="Sprite" parent="." index="0"]
 texture = ExtResource( 2 )

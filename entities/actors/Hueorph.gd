@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+const Poof := preload("res://entities/components/Poof.tscn")
+
 export (int) var _run_speed = 250
 export (int) var _jump_speed = -400
 export (int) var _gravity = 1200
@@ -45,7 +47,8 @@ func _physics_process(delta):
 	_velocity = move_and_slide(_velocity, Vector2(0, -1), true)
 
 
-func _on_Hueorph_combine(colour):
+func _on_Hueorph_combine(colour: String, hexadecimal: String):
+	_create_poof_effect(colour, hexadecimal)
 	_animated_sprite.visible = false
 
 	match(colour):
@@ -57,3 +60,11 @@ func _on_Hueorph_combine(colour):
 			_animated_sprite = _animated_sprite_pink
 
 	_animated_sprite.visible = true
+
+func _create_poof_effect(colour: String, hexadecimal: String):
+	var _poof := Poof.instance()
+
+	_poof.change_colour(Color(hexadecimal))
+
+	self.add_child(_poof)
+	_poof.global_position = global_position
