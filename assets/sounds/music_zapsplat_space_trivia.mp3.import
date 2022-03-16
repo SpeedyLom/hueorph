@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_zapsplat_space_trivia.mp3-c6324f980858ce658f6973b5a2629737.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/music_zapsplat_space_trivia.mp3"
+dest_files=[ "res://.import/music_zapsplat_space_trivia.mp3-c6324f980858ce658f6973b5a2629737.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

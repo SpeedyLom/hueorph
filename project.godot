@@ -8,16 +8,36 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Area2D",
+"class": "PlayerDetectionArea",
+"language": "GDScript",
+"path": "res://entities/components/PlayerDetectionArea.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Robot",
+"language": "GDScript",
+"path": "res://entities/actors/Robot.gd"
+} ]
+_global_script_class_icons={
+"PlayerDetectionArea": "",
+"Robot": ""
+}
+
 [application]
 
 config/name="Hueorph"
 run/main_scene="res://entities/levels/Level0.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+HueorphGame="*res://entities/components/HueorphGame.gd"
+BackgroundMusic="*res://entities/components/BackgroundMusic.tscn"
+
 [display]
 
-window/size/width=1280
-window/size/height=720
+window/size/width=800
 
 [input]
 
