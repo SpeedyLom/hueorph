@@ -1,96 +1,12 @@
-[gd_resource type="TileSet" load_steps=49 format=2]
+[gd_resource type="TileSet" load_steps=23 format=2]
 
 [ext_resource path="res://assets/sprites/tiles/tiles_spritesheet.png" type="Texture" id=1]
-
-[sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 35, 35, -31, 35, -35, 31, -35, -30, -30, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 28, -36, 34, -30, 34, -12, 33, -4, 27, 9, 17, 19, 6, 25, -14, 31, -36, 34, -36, -36 )
-
-[sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 35, -35, 35, 35, 11, 35, 0, 16, -29, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=5]
-points = PoolVector2Array( -29, -35, 0, 16, -13, 4 )
-
-[sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( -29, -35, -13, 4, -27, -6, -35, -12, -35, -30 )
-
-[sub_resource type="ConvexPolygonShape2D" id=7]
-points = PoolVector2Array( 35, 34, 18, 32, -2, 27, -15, 20, -26, 12, -32, 0, -35, -10, -35, -31, -30, -36, 35, -36 )
-
-[sub_resource type="ConvexPolygonShape2D" id=8]
-points = PoolVector2Array( 35, -30, 35, 29, 28, 34, -30, 34, -35, 27, -35, -31, -28, -36, 28, -36 )
-
-[sub_resource type="ConvexPolygonShape2D" id=9]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=10]
-points = PoolVector2Array( 35, -29, 35, 30, 29, 35, -30, 35, -35, 29, -34, -31, -28, -35, 29, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=11]
-points = PoolVector2Array( -35, 16, -30, 10, 29, 10, 35, 15, 35, 28, 30, 34, -29, 34, -35, 28 )
-
-[sub_resource type="ConvexPolygonShape2D" id=12]
-points = PoolVector2Array( -35, -35, 29, -35, 35, -30, 35, 28, 31, 35, -35, 35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=22]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=23]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=24]
-points = PoolVector2Array( -35, 35, -35, -2, -24, 2, 35, 35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=25]
-points = PoolVector2Array( 35, 35, -24, 2, -5, -1, 35, -2 )
-
-[sub_resource type="ConvexPolygonShape2D" id=26]
-points = PoolVector2Array( 35, -2, -5, -1, 18, -6 )
 
 [sub_resource type="ConvexPolygonShape2D" id=27]
 points = PoolVector2Array( 35, 35, -31, 35, -35, 31, -35, -30, -30, -35, 35, -35 )
 
 [sub_resource type="ConvexPolygonShape2D" id=28]
 points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=29]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=30]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=31]
-points = PoolVector2Array( -35, 35, -35, -2, -24, 2, 35, 35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=32]
-points = PoolVector2Array( 35, 35, -24, 2, -5, -1, 35, -2 )
-
-[sub_resource type="ConvexPolygonShape2D" id=33]
-points = PoolVector2Array( 35, -2, -5, -1, 18, -6 )
-
-[sub_resource type="ConvexPolygonShape2D" id=13]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=34]
-points = PoolVector2Array( -35, -35, 29, -35, 35, -30, 35, 28, 31, 35, -35, 35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=35]
-points = PoolVector2Array( 35, 35, -35, 35, -35, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=36]
-points = PoolVector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=37]
-points = PoolVector2Array( 34, 35, -35, 35, 34, -34 )
-
-[sub_resource type="ConvexPolygonShape2D" id=38]
-points = PoolVector2Array( 28, -35, 34, -29, 34, 0, 28, 5, -36, 5, -36, -35 )
 
 [sub_resource type="ConvexPolygonShape2D" id=39]
 points = PoolVector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
@@ -104,12 +20,6 @@ points = PoolVector2Array( 28, -36, 34, -30, 34, -12, 33, -4, 27, 9, 17, 19, 6, 
 [sub_resource type="ConvexPolygonShape2D" id=42]
 points = PoolVector2Array( 35, 34, 18, 32, -2, 27, -15, 20, -26, 12, -32, 0, -35, -10, -35, -31, -30, -36, 35, -36 )
 
-[sub_resource type="ConvexPolygonShape2D" id=43]
-points = PoolVector2Array( 35, -30, 35, 29, 28, 34, -30, 34, -35, 27, -35, -31, -28, -36, 28, -36 )
-
-[sub_resource type="ConvexPolygonShape2D" id=14]
-points = PoolVector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
-
 [sub_resource type="ConvexPolygonShape2D" id=44]
 points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
 
@@ -119,32 +29,44 @@ points = PoolVector2Array( 35, -29, 35, 30, 29, 35, -30, 35, -35, 29, -34, -31, 
 [sub_resource type="ConvexPolygonShape2D" id=46]
 points = PoolVector2Array( -35, 16, -30, 10, 29, 10, 35, 15, 35, 28, 30, 34, -29, 34, -35, 28 )
 
+[sub_resource type="ConvexPolygonShape2D" id=34]
+points = PoolVector2Array( -35, -35, 29, -35, 35, -30, 35, 28, 31, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=30]
+points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=31]
+points = PoolVector2Array( -35, 35, -35, -2, -24, 2, 35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=32]
+points = PoolVector2Array( 35, 35, -24, 2, -5, -1, 35, -2 )
+
+[sub_resource type="ConvexPolygonShape2D" id=33]
+points = PoolVector2Array( 35, -2, -5, -1, 18, -6 )
+
+[sub_resource type="ConvexPolygonShape2D" id=43]
+points = PoolVector2Array( 35, -30, 35, 29, 28, 34, -30, 34, -35, 27, -35, -31, -28, -36, 28, -36 )
+
+[sub_resource type="ConvexPolygonShape2D" id=36]
+points = PoolVector2Array( -35, -35, 35, -35, 35, 35, -35, 35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=29]
+points = PoolVector2Array( 35, 35, -35, 35, -35, -35, 35, -35 )
+
+[sub_resource type="ConvexPolygonShape2D" id=37]
+points = PoolVector2Array( 34, 35, -35, 35, 34, -34 )
+
+[sub_resource type="ConvexPolygonShape2D" id=35]
+points = PoolVector2Array( 35, 35, -35, 35, -35, -35 )
+
 [sub_resource type="ConvexPolygonShape2D" id=47]
 points = PoolVector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
 
-[sub_resource type="ConvexPolygonShape2D" id=15]
-points = PoolVector2Array( 34, 35, -35, 35, 34, -34 )
-
-[sub_resource type="ConvexPolygonShape2D" id=16]
+[sub_resource type="ConvexPolygonShape2D" id=38]
 points = PoolVector2Array( 28, -35, 34, -29, 34, 0, 28, 5, -36, 5, -36, -35 )
 
-[sub_resource type="ConvexPolygonShape2D" id=17]
-points = PoolVector2Array( -35, -35, 35, -35, 35, 5, -35, 5 )
-
-[sub_resource type="ConvexPolygonShape2D" id=18]
-points = PoolVector2Array( 30, -35, 35, -30, 35, -1, 30, 5, -29, 5, -35, 0, -35, -29, -30, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=19]
-points = PoolVector2Array( 0, 16, -12, 35, -35, 35, -35, -35, 30, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=20]
-points = PoolVector2Array( 14, 3, 0, 16, 30, -35 )
-
-[sub_resource type="ConvexPolygonShape2D" id=21]
-points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
-
 [resource]
-0/name = "Tile1"
+0/name = "GrassDirtLeft"
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
@@ -154,18 +76,18 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 0/navigation_offset = Vector2( 35, 35 )
 0/shape_offset = Vector2( 35, 35 )
 0/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-0/shape = SubResource( 1 )
+0/shape = SubResource( 27 )
 0/shape_one_way = false
 0/shape_one_way_margin = 1.0
 0/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 1 ),
+"shape": SubResource( 27 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 0/z_index = 0
-1/name = "Tile2"
+1/name = "GrassDirtCentre"
 1/texture = ExtResource( 1 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
@@ -175,18 +97,18 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 1/navigation_offset = Vector2( 35, 35 )
 1/shape_offset = Vector2( 35, 35 )
 1/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-1/shape = SubResource( 2 )
+1/shape = SubResource( 28 )
 1/shape_one_way = false
 1/shape_one_way_margin = 1.0
 1/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 2 ),
+"shape": SubResource( 28 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 1/z_index = 0
-2/name = "Tile3"
+2/name = "GrassDirtRight"
 2/texture = ExtResource( 1 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
@@ -196,39 +118,39 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 2/navigation_offset = Vector2( 35, 35 )
 2/shape_offset = Vector2( 35, 35 )
 2/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-2/shape = SubResource( 12 )
+2/shape = SubResource( 34 )
 2/shape_one_way = false
 2/shape_one_way_margin = 1.0
 2/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 12 ),
+"shape": SubResource( 34 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 2/z_index = 0
-3/name = "Tile4"
+3/name = "GrassRound"
 3/texture = ExtResource( 1 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
-3/region = Rect2( 576, 0, 70, 70 )
+3/region = Rect2( 576, 792, 70, 70 )
 3/tile_mode = 0
 3/occluder_offset = Vector2( 35, 35 )
 3/navigation_offset = Vector2( 35, 35 )
 3/shape_offset = Vector2( 35, 35 )
 3/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-3/shape = SubResource( 13 )
+3/shape = SubResource( 43 )
 3/shape_one_way = false
 3/shape_one_way_margin = 1.0
 3/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 13 ),
+"shape": SubResource( 43 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 3/z_index = 0
-4/name = "Tile5"
+4/name = "GrassDirtSlopeLeft"
 4/texture = ExtResource( 1 )
 4/tex_offset = Vector2( 0, 0 )
 4/modulate = Color( 1, 1, 1, 1 )
@@ -238,231 +160,207 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 4/navigation_offset = Vector2( 35, 35 )
 4/shape_offset = Vector2( 35, 35 )
 4/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-4/shape = SubResource( 14 )
+4/shape = SubResource( 36 )
 4/shape_one_way = false
 4/shape_one_way_margin = 1.0
 4/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 14 ),
+"shape": SubResource( 36 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 4/z_index = 0
-5/name = "Tile6"
+5/name = "GrassDirtSlopeRight"
 5/texture = ExtResource( 1 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
-5/region = Rect2( 576, 144, 72, 70 )
+5/region = Rect2( 504, 864, 70, 70 )
 5/tile_mode = 0
-5/occluder_offset = Vector2( 36, 35 )
-5/navigation_offset = Vector2( 36, 35 )
-5/shape_offset = Vector2( 36, 35 )
-5/shape_transform = Transform2D( 1, 0, 0, 1, 36, 35 )
-5/shape = SubResource( 15 )
+5/occluder_offset = Vector2( 35, 35 )
+5/navigation_offset = Vector2( 35, 35 )
+5/shape_offset = Vector2( 35, 35 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
+5/shape = SubResource( 29 )
 5/shape_one_way = false
 5/shape_one_way_margin = 1.0
 5/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 15 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 36, 35 )
+"shape": SubResource( 29 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 5/z_index = 0
-6/name = "Tile7"
+6/name = "GrassDirtSteepSlopeLeft"
 6/texture = ExtResource( 1 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
-6/region = Rect2( 576, 216, 72, 70 )
+6/region = Rect2( 576, 144, 70, 70 )
 6/tile_mode = 0
-6/occluder_offset = Vector2( 36, 35 )
-6/navigation_offset = Vector2( 36, 35 )
-6/shape_offset = Vector2( 36, 35 )
-6/shape_transform = Transform2D( 1, 0, 0, 1, 36, 35 )
-6/shape = SubResource( 16 )
+6/occluder_offset = Vector2( 35, 35 )
+6/navigation_offset = Vector2( 35, 35 )
+6/shape_offset = Vector2( 35, 35 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
+6/shape = SubResource( 37 )
 6/shape_one_way = false
 6/shape_one_way_margin = 1.0
 6/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 16 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 36, 35 )
+"shape": SubResource( 37 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 6/z_index = 0
-7/name = "Tile8"
+7/name = "GrassDirtSteepSlopeRight"
 7/texture = ExtResource( 1 )
 7/tex_offset = Vector2( 0, 0 )
 7/modulate = Color( 1, 1, 1, 1 )
-7/region = Rect2( 576, 288, 70, 70 )
+7/region = Rect2( 576, 0, 70, 70 )
 7/tile_mode = 0
 7/occluder_offset = Vector2( 35, 35 )
 7/navigation_offset = Vector2( 35, 35 )
 7/shape_offset = Vector2( 35, 35 )
 7/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-7/shape = SubResource( 17 )
+7/shape = SubResource( 35 )
 7/shape_one_way = false
 7/shape_one_way_margin = 1.0
 7/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 17 ),
+"shape": SubResource( 35 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 7/z_index = 0
-8/name = "Tile9"
+8/name = "GrassPlatformLeft"
 8/texture = ExtResource( 1 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
-8/region = Rect2( 576, 432, 70, 70 )
+8/region = Rect2( 576, 360, 70, 70 )
 8/tile_mode = 0
 8/occluder_offset = Vector2( 35, 35 )
 8/navigation_offset = Vector2( 35, 35 )
 8/shape_offset = Vector2( 35, 35 )
 8/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-8/shape = SubResource( 18 )
+8/shape = SubResource( 47 )
 8/shape_one_way = false
 8/shape_one_way_margin = 1.0
 8/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 18 ),
+"shape": SubResource( 47 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 8/z_index = 0
-9/name = "Tile10"
+9/name = "GrassPlatformRight"
 9/texture = ExtResource( 1 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
-9/region = Rect2( 576, 504, 70, 70 )
+9/region = Rect2( 576, 216, 70, 70 )
 9/tile_mode = 0
 9/occluder_offset = Vector2( 35, 35 )
 9/navigation_offset = Vector2( 35, 35 )
 9/shape_offset = Vector2( 35, 35 )
 9/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-9/shape = SubResource( 19 )
+9/shape = SubResource( 38 )
 9/shape_one_way = false
 9/shape_one_way_margin = 1.0
 9/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 19 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 20 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 21 ),
+"shape": SubResource( 38 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 9/z_index = 0
-10/name = "Tile11"
+10/name = "GrassPlatformCentre"
 10/texture = ExtResource( 1 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
-10/region = Rect2( 576, 576, 72, 72 )
+10/region = Rect2( 576, 288, 70, 70 )
 10/tile_mode = 0
-10/occluder_offset = Vector2( 36, 36 )
-10/navigation_offset = Vector2( 36, 36 )
-10/shape_offset = Vector2( 36, 36 )
-10/shape_transform = Transform2D( 1, 0, 0, 1, 36, 36 )
-10/shape = SubResource( 3 )
+10/occluder_offset = Vector2( 35, 35 )
+10/navigation_offset = Vector2( 35, 35 )
+10/shape_offset = Vector2( 35, 35 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
+10/shape = SubResource( 39 )
 10/shape_one_way = false
 10/shape_one_way_margin = 1.0
 10/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 3 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 36, 36 )
+"shape": SubResource( 39 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 10/z_index = 0
-11/name = "Tile12"
+11/name = "GrassPlatformRound"
 11/texture = ExtResource( 1 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
-11/region = Rect2( 576, 648, 70, 70 )
+11/region = Rect2( 576, 432, 70, 70 )
 11/tile_mode = 0
 11/occluder_offset = Vector2( 35, 35 )
 11/navigation_offset = Vector2( 35, 35 )
 11/shape_offset = Vector2( 35, 35 )
 11/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-11/shape = SubResource( 4 )
+11/shape = SubResource( 40 )
 11/shape_one_way = false
 11/shape_one_way_margin = 1.0
 11/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 4 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 5 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 6 ),
+"shape": SubResource( 40 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 11/z_index = 0
-12/name = "Tile13"
+12/name = "GrassRoundRight"
 12/texture = ExtResource( 1 )
 12/tex_offset = Vector2( 0, 0 )
 12/modulate = Color( 1, 1, 1, 1 )
-12/region = Rect2( 576, 720, 70, 72 )
+12/region = Rect2( 576, 576, 70, 70 )
 12/tile_mode = 0
-12/occluder_offset = Vector2( 35, 36 )
-12/navigation_offset = Vector2( 35, 36 )
-12/shape_offset = Vector2( 35, 36 )
-12/shape_transform = Transform2D( 1, 0, 0, 1, 35, 36 )
-12/shape = SubResource( 7 )
+12/occluder_offset = Vector2( 35, 35 )
+12/navigation_offset = Vector2( 35, 35 )
+12/shape_offset = Vector2( 35, 35 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
+12/shape = SubResource( 41 )
 12/shape_one_way = false
 12/shape_one_way_margin = 1.0
 12/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 7 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 36 )
+"shape": SubResource( 41 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 12/z_index = 0
-13/name = "Tile14"
+13/name = "GrassRoundLeft"
 13/texture = ExtResource( 1 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
-13/region = Rect2( 576, 792, 70, 72 )
+13/region = Rect2( 576, 720, 70, 70 )
 13/tile_mode = 0
-13/occluder_offset = Vector2( 35, 36 )
-13/navigation_offset = Vector2( 35, 36 )
-13/shape_offset = Vector2( 35, 36 )
-13/shape_transform = Transform2D( 1, 0, 0, 1, 35, 36 )
-13/shape = SubResource( 8 )
+13/occluder_offset = Vector2( 35, 35 )
+13/navigation_offset = Vector2( 35, 35 )
+13/shape_offset = Vector2( 35, 35 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
+13/shape = SubResource( 42 )
 13/shape_one_way = false
 13/shape_one_way_margin = 1.0
 13/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 8 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 36 )
+"shape": SubResource( 42 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 13/z_index = 0
-14/name = "Tile15"
+14/name = "Dirt"
 14/texture = ExtResource( 1 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
@@ -472,18 +370,18 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 14/navigation_offset = Vector2( 35, 35 )
 14/shape_offset = Vector2( 35, 35 )
 14/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-14/shape = SubResource( 9 )
+14/shape = SubResource( 44 )
 14/shape_one_way = false
 14/shape_one_way_margin = 1.0
 14/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 9 ),
+"shape": SubResource( 44 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 14/z_index = 0
-15/name = "Tile16"
+15/name = "GrassDirtRound"
 15/texture = ExtResource( 1 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
@@ -493,18 +391,18 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 15/navigation_offset = Vector2( 35, 35 )
 15/shape_offset = Vector2( 35, 35 )
 15/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-15/shape = SubResource( 10 )
+15/shape = SubResource( 45 )
 15/shape_one_way = false
 15/shape_one_way_margin = 1.0
 15/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 10 ),
+"shape": SubResource( 45 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 15/z_index = 0
-16/name = "Tile17"
+16/name = "LogPlatform"
 16/texture = ExtResource( 1 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
@@ -514,18 +412,18 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 16/navigation_offset = Vector2( 35, 13 )
 16/shape_offset = Vector2( 35, -9 )
 16/shape_transform = Transform2D( 1, 0, 0, 1, 35, -9 )
-16/shape = SubResource( 11 )
+16/shape = SubResource( 46 )
 16/shape_one_way = false
 16/shape_one_way_margin = 1.0
 16/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 11 ),
+"shape": SubResource( 46 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, -9 )
 } ]
 16/z_index = 0
-17/name = "Tile18"
+17/name = "Fence"
 17/texture = ExtResource( 1 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
@@ -539,7 +437,7 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 17/shape_one_way_margin = 0.0
 17/shapes = [  ]
 17/z_index = 0
-18/name = "Tile19"
+18/name = "FenceBroken"
 18/texture = ExtResource( 1 )
 18/tex_offset = Vector2( 0, 0 )
 18/modulate = Color( 1, 1, 1, 1 )
@@ -553,7 +451,7 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 18/shape_one_way_margin = 0.0
 18/shapes = [  ]
 18/z_index = 0
-19/name = "Tile20"
+19/name = "SignRight"
 19/texture = ExtResource( 1 )
 19/tex_offset = Vector2( 0, 0 )
 19/modulate = Color( 1, 1, 1, 1 )
@@ -567,7 +465,7 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 19/shape_one_way_margin = 0.0
 19/shapes = [  ]
 19/z_index = 0
-20/name = "Tile21"
+20/name = "SignLeft"
 20/texture = ExtResource( 1 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
@@ -581,7 +479,7 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 20/shape_one_way_margin = 0.0
 20/shapes = [  ]
 20/z_index = 0
-21/name = "Tile22"
+21/name = "SignExit"
 21/texture = ExtResource( 1 )
 21/tex_offset = Vector2( 0, 0 )
 21/modulate = Color( 1, 1, 1, 1 )
@@ -595,28 +493,21 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 21/shape_one_way_margin = 0.0
 21/shapes = [  ]
 21/z_index = 0
-22/name = "Tile23"
+22/name = "RopeHoizontal"
 22/texture = ExtResource( 1 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
-22/region = Rect2( 504, 864, 70, 70 )
+22/region = Rect2( 432, 0, 70, 70 )
 22/tile_mode = 0
 22/occluder_offset = Vector2( 35, 35 )
 22/navigation_offset = Vector2( 35, 35 )
-22/shape_offset = Vector2( 35, 35 )
-22/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-22/shape = SubResource( 22 )
+22/shape_offset = Vector2( 0, 0 )
+22/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 22/shape_one_way = false
-22/shape_one_way_margin = 1.0
-22/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 22 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
+22/shape_one_way_margin = 0.0
+22/shapes = [  ]
 22/z_index = 0
-23/name = "Tile25"
+23/name = "WaterFull"
 23/texture = ExtResource( 1 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
@@ -626,18 +517,18 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 23/navigation_offset = Vector2( 35, 35 )
 23/shape_offset = Vector2( 35, 35 )
 23/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-23/shape = SubResource( 23 )
+23/shape = SubResource( 30 )
 23/shape_one_way = false
 23/shape_one_way_margin = 1.0
 23/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
-"shape": SubResource( 23 ),
+"shape": SubResource( 30 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
 23/z_index = 0
-24/name = "Tile24"
+24/name = "WaterWaves"
 24/texture = ExtResource( 1 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
@@ -647,127 +538,10 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 24/navigation_offset = Vector2( 35, 35 )
 24/shape_offset = Vector2( 35, 35 )
 24/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-24/shape = SubResource( 24 )
+24/shape = SubResource( 31 )
 24/shape_one_way = false
 24/shape_one_way_margin = 1.0
 24/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 24 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 25 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-}, {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 26 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-24/z_index = 0
-25/name = "GrassDirtLeft"
-25/texture = ExtResource( 1 )
-25/tex_offset = Vector2( 0, 0 )
-25/modulate = Color( 1, 1, 1, 1 )
-25/region = Rect2( 504, 648, 70, 70 )
-25/tile_mode = 0
-25/occluder_offset = Vector2( 35, 35 )
-25/navigation_offset = Vector2( 35, 35 )
-25/shape_offset = Vector2( 35, 35 )
-25/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-25/shape = SubResource( 27 )
-25/shape_one_way = false
-25/shape_one_way_margin = 1.0
-25/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 27 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-25/z_index = 0
-26/name = "GrassDirtCentre"
-26/texture = ExtResource( 1 )
-26/tex_offset = Vector2( 0, 0 )
-26/modulate = Color( 1, 1, 1, 1 )
-26/region = Rect2( 504, 576, 70, 70 )
-26/tile_mode = 0
-26/occluder_offset = Vector2( 35, 35 )
-26/navigation_offset = Vector2( 35, 35 )
-26/shape_offset = Vector2( 35, 35 )
-26/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-26/shape = SubResource( 28 )
-26/shape_one_way = false
-26/shape_one_way_margin = 1.0
-26/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 28 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-26/z_index = 0
-27/name = "GrassDirtSlopeRight"
-27/texture = ExtResource( 1 )
-27/tex_offset = Vector2( 0, 0 )
-27/modulate = Color( 1, 1, 1, 1 )
-27/region = Rect2( 504, 864, 70, 70 )
-27/tile_mode = 0
-27/occluder_offset = Vector2( 35, 35 )
-27/navigation_offset = Vector2( 35, 35 )
-27/shape_offset = Vector2( 35, 35 )
-27/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-27/shape = SubResource( 29 )
-27/shape_one_way = false
-27/shape_one_way_margin = 1.0
-27/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 29 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-27/z_index = 0
-28/name = "WaterFull"
-28/texture = ExtResource( 1 )
-28/tex_offset = Vector2( 0, 0 )
-28/modulate = Color( 1, 1, 1, 1 )
-28/region = Rect2( 504, 216, 70, 70 )
-28/tile_mode = 0
-28/occluder_offset = Vector2( 35, 35 )
-28/navigation_offset = Vector2( 35, 35 )
-28/shape_offset = Vector2( 35, 35 )
-28/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-28/shape = SubResource( 30 )
-28/shape_one_way = false
-28/shape_one_way_margin = 1.0
-28/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 30 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-28/z_index = 0
-29/name = "WaterWaves"
-29/texture = ExtResource( 1 )
-29/tex_offset = Vector2( 0, 0 )
-29/modulate = Color( 1, 1, 1, 1 )
-29/region = Rect2( 432, 576, 70, 70 )
-29/tile_mode = 0
-29/occluder_offset = Vector2( 35, 35 )
-29/navigation_offset = Vector2( 35, 35 )
-29/shape_offset = Vector2( 35, 35 )
-29/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-29/shape = SubResource( 31 )
-29/shape_one_way = false
-29/shape_one_way_margin = 1.0
-29/shapes = [ {
 "autotile_coord": Vector2( 0, 0 ),
 "one_way": false,
 "one_way_margin": 1.0,
@@ -786,382 +560,4 @@ points = PoolVector2Array( 35, -11, 14, 3, 30, -35, 35, -29 )
 "shape": SubResource( 33 ),
 "shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
 } ]
-29/z_index = 0
-30/name = "GrassDirtRight"
-30/texture = ExtResource( 1 )
-30/tex_offset = Vector2( 0, 0 )
-30/modulate = Color( 1, 1, 1, 1 )
-30/region = Rect2( 504, 504, 70, 70 )
-30/tile_mode = 0
-30/occluder_offset = Vector2( 35, 35 )
-30/navigation_offset = Vector2( 35, 35 )
-30/shape_offset = Vector2( 35, 35 )
-30/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-30/shape = SubResource( 34 )
-30/shape_one_way = false
-30/shape_one_way_margin = 1.0
-30/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 34 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-30/z_index = 0
-31/name = "GrassDirtSteepSlopeRight"
-31/texture = ExtResource( 1 )
-31/tex_offset = Vector2( 0, 0 )
-31/modulate = Color( 1, 1, 1, 1 )
-31/region = Rect2( 576, 0, 70, 70 )
-31/tile_mode = 0
-31/occluder_offset = Vector2( 35, 35 )
-31/navigation_offset = Vector2( 35, 35 )
-31/shape_offset = Vector2( 35, 35 )
-31/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-31/shape = SubResource( 35 )
-31/shape_one_way = false
-31/shape_one_way_margin = 1.0
-31/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 35 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-31/z_index = 0
-32/name = "GrassDirtSlopeLeft"
-32/texture = ExtResource( 1 )
-32/tex_offset = Vector2( 0, 0 )
-32/modulate = Color( 1, 1, 1, 1 )
-32/region = Rect2( 576, 72, 70, 70 )
-32/tile_mode = 0
-32/occluder_offset = Vector2( 35, 35 )
-32/navigation_offset = Vector2( 35, 35 )
-32/shape_offset = Vector2( 35, 35 )
-32/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-32/shape = SubResource( 36 )
-32/shape_one_way = false
-32/shape_one_way_margin = 1.0
-32/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 36 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-32/z_index = 0
-33/name = "GrassDirtSteepSlopeLeft"
-33/texture = ExtResource( 1 )
-33/tex_offset = Vector2( 0, 0 )
-33/modulate = Color( 1, 1, 1, 1 )
-33/region = Rect2( 576, 144, 70, 70 )
-33/tile_mode = 0
-33/occluder_offset = Vector2( 35, 35 )
-33/navigation_offset = Vector2( 35, 35 )
-33/shape_offset = Vector2( 35, 35 )
-33/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-33/shape = SubResource( 37 )
-33/shape_one_way = false
-33/shape_one_way_margin = 1.0
-33/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 37 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-33/z_index = 0
-34/name = "GrassPlatformRight"
-34/texture = ExtResource( 1 )
-34/tex_offset = Vector2( 0, 0 )
-34/modulate = Color( 1, 1, 1, 1 )
-34/region = Rect2( 576, 216, 70, 70 )
-34/tile_mode = 0
-34/occluder_offset = Vector2( 35, 35 )
-34/navigation_offset = Vector2( 35, 35 )
-34/shape_offset = Vector2( 35, 35 )
-34/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-34/shape = SubResource( 38 )
-34/shape_one_way = false
-34/shape_one_way_margin = 1.0
-34/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 38 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-34/z_index = 0
-35/name = "GrassPlatformCentre"
-35/texture = ExtResource( 1 )
-35/tex_offset = Vector2( 0, 0 )
-35/modulate = Color( 1, 1, 1, 1 )
-35/region = Rect2( 576, 288, 70, 70 )
-35/tile_mode = 0
-35/occluder_offset = Vector2( 35, 35 )
-35/navigation_offset = Vector2( 35, 35 )
-35/shape_offset = Vector2( 35, 35 )
-35/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-35/shape = SubResource( 39 )
-35/shape_one_way = false
-35/shape_one_way_margin = 1.0
-35/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 39 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-35/z_index = 0
-36/name = "GrassPlatformRound"
-36/texture = ExtResource( 1 )
-36/tex_offset = Vector2( 0, 0 )
-36/modulate = Color( 1, 1, 1, 1 )
-36/region = Rect2( 576, 432, 70, 70 )
-36/tile_mode = 0
-36/occluder_offset = Vector2( 35, 35 )
-36/navigation_offset = Vector2( 35, 35 )
-36/shape_offset = Vector2( 35, 35 )
-36/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-36/shape = SubResource( 40 )
-36/shape_one_way = false
-36/shape_one_way_margin = 1.0
-36/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 40 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-36/z_index = 0
-37/name = "GrassRoundRight"
-37/texture = ExtResource( 1 )
-37/tex_offset = Vector2( 0, 0 )
-37/modulate = Color( 1, 1, 1, 1 )
-37/region = Rect2( 576, 576, 70, 70 )
-37/tile_mode = 0
-37/occluder_offset = Vector2( 35, 35 )
-37/navigation_offset = Vector2( 35, 35 )
-37/shape_offset = Vector2( 35, 35 )
-37/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-37/shape = SubResource( 41 )
-37/shape_one_way = false
-37/shape_one_way_margin = 1.0
-37/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 41 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-37/z_index = 0
-38/name = "GrassRoundLeft"
-38/texture = ExtResource( 1 )
-38/tex_offset = Vector2( 0, 0 )
-38/modulate = Color( 1, 1, 1, 1 )
-38/region = Rect2( 576, 720, 70, 70 )
-38/tile_mode = 0
-38/occluder_offset = Vector2( 35, 35 )
-38/navigation_offset = Vector2( 35, 35 )
-38/shape_offset = Vector2( 35, 35 )
-38/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-38/shape = SubResource( 42 )
-38/shape_one_way = false
-38/shape_one_way_margin = 1.0
-38/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 42 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-38/z_index = 0
-39/name = "GrassRound"
-39/texture = ExtResource( 1 )
-39/tex_offset = Vector2( 0, 0 )
-39/modulate = Color( 1, 1, 1, 1 )
-39/region = Rect2( 576, 792, 70, 70 )
-39/tile_mode = 0
-39/occluder_offset = Vector2( 35, 35 )
-39/navigation_offset = Vector2( 35, 35 )
-39/shape_offset = Vector2( 35, 35 )
-39/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-39/shape = SubResource( 43 )
-39/shape_one_way = false
-39/shape_one_way_margin = 1.0
-39/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 43 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-39/z_index = 0
-40/name = "Dirt"
-40/texture = ExtResource( 1 )
-40/tex_offset = Vector2( 0, 0 )
-40/modulate = Color( 1, 1, 1, 1 )
-40/region = Rect2( 576, 864, 70, 70 )
-40/tile_mode = 0
-40/occluder_offset = Vector2( 35, 35 )
-40/navigation_offset = Vector2( 35, 35 )
-40/shape_offset = Vector2( 35, 35 )
-40/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-40/shape = SubResource( 44 )
-40/shape_one_way = false
-40/shape_one_way_margin = 1.0
-40/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 44 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-40/z_index = 0
-41/name = "GrassDirtRound"
-41/texture = ExtResource( 1 )
-41/tex_offset = Vector2( 0, 0 )
-41/modulate = Color( 1, 1, 1, 1 )
-41/region = Rect2( 648, 0, 70, 70 )
-41/tile_mode = 0
-41/occluder_offset = Vector2( 35, 35 )
-41/navigation_offset = Vector2( 35, 35 )
-41/shape_offset = Vector2( 35, 35 )
-41/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-41/shape = SubResource( 45 )
-41/shape_one_way = false
-41/shape_one_way_margin = 1.0
-41/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 45 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-41/z_index = 0
-42/name = "LogPlatform"
-42/texture = ExtResource( 1 )
-42/tex_offset = Vector2( 0, 0 )
-42/modulate = Color( 1, 1, 1, 1 )
-42/region = Rect2( 288, 764, 70, 26 )
-42/tile_mode = 0
-42/occluder_offset = Vector2( 35, 13 )
-42/navigation_offset = Vector2( 35, 13 )
-42/shape_offset = Vector2( 35, -9 )
-42/shape_transform = Transform2D( 1, 0, 0, 1, 35, -9 )
-42/shape = SubResource( 46 )
-42/shape_one_way = false
-42/shape_one_way_margin = 1.0
-42/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 46 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, -9 )
-} ]
-42/z_index = 0
-43/name = "Fence"
-43/texture = ExtResource( 1 )
-43/tex_offset = Vector2( 0, 0 )
-43/modulate = Color( 1, 1, 1, 1 )
-43/region = Rect2( 648, 144, 70, 70 )
-43/tile_mode = 0
-43/occluder_offset = Vector2( 35, 35 )
-43/navigation_offset = Vector2( 35, 35 )
-43/shape_offset = Vector2( 0, 0 )
-43/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-43/shape_one_way = false
-43/shape_one_way_margin = 0.0
-43/shapes = [  ]
-43/z_index = 0
-44/name = "FenceBroken"
-44/texture = ExtResource( 1 )
-44/tex_offset = Vector2( 0, 0 )
-44/modulate = Color( 1, 1, 1, 1 )
-44/region = Rect2( 648, 72, 70, 70 )
-44/tile_mode = 0
-44/occluder_offset = Vector2( 35, 35 )
-44/navigation_offset = Vector2( 35, 35 )
-44/shape_offset = Vector2( 0, 0 )
-44/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-44/shape_one_way = false
-44/shape_one_way_margin = 0.0
-44/shapes = [  ]
-44/z_index = 0
-45/name = "SignRight"
-45/texture = ExtResource( 1 )
-45/tex_offset = Vector2( 0, 0 )
-45/modulate = Color( 1, 1, 1, 1 )
-45/region = Rect2( 288, 216, 70, 70 )
-45/tile_mode = 0
-45/occluder_offset = Vector2( 35, 35 )
-45/navigation_offset = Vector2( 35, 35 )
-45/shape_offset = Vector2( 0, 0 )
-45/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-45/shape_one_way = false
-45/shape_one_way_margin = 0.0
-45/shapes = [  ]
-45/z_index = 0
-46/name = "SignLeft"
-46/texture = ExtResource( 1 )
-46/tex_offset = Vector2( 0, 0 )
-46/modulate = Color( 1, 1, 1, 1 )
-46/region = Rect2( 288, 288, 70, 70 )
-46/tile_mode = 0
-46/occluder_offset = Vector2( 35, 35 )
-46/navigation_offset = Vector2( 35, 35 )
-46/shape_offset = Vector2( 0, 0 )
-46/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-46/shape_one_way = false
-46/shape_one_way_margin = 0.0
-46/shapes = [  ]
-46/z_index = 0
-47/name = "SignExit"
-47/texture = ExtResource( 1 )
-47/tex_offset = Vector2( 0, 0 )
-47/modulate = Color( 1, 1, 1, 1 )
-47/region = Rect2( 288, 360, 70, 70 )
-47/tile_mode = 0
-47/occluder_offset = Vector2( 35, 35 )
-47/navigation_offset = Vector2( 35, 35 )
-47/shape_offset = Vector2( 0, 0 )
-47/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-47/shape_one_way = false
-47/shape_one_way_margin = 0.0
-47/shapes = [  ]
-47/z_index = 0
-48/name = "RopeHoizontal"
-48/texture = ExtResource( 1 )
-48/tex_offset = Vector2( 0, 0 )
-48/modulate = Color( 1, 1, 1, 1 )
-48/region = Rect2( 432, 0, 70, 70 )
-48/tile_mode = 0
-48/occluder_offset = Vector2( 35, 35 )
-48/navigation_offset = Vector2( 35, 35 )
-48/shape_offset = Vector2( 0, 0 )
-48/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-48/shape_one_way = false
-48/shape_one_way_margin = 0.0
-48/shapes = [  ]
-48/z_index = 0
-49/name = "GrassPlatformLeft"
-49/texture = ExtResource( 1 )
-49/tex_offset = Vector2( 0, 0 )
-49/modulate = Color( 1, 1, 1, 1 )
-49/region = Rect2( 576, 360, 70, 70 )
-49/tile_mode = 0
-49/occluder_offset = Vector2( 35, 35 )
-49/navigation_offset = Vector2( 35, 35 )
-49/shape_offset = Vector2( 35, 35 )
-49/shape_transform = Transform2D( 1, 0, 0, 1, 35, 35 )
-49/shape = SubResource( 47 )
-49/shape_one_way = false
-49/shape_one_way_margin = 1.0
-49/shapes = [ {
-"autotile_coord": Vector2( 0, 0 ),
-"one_way": false,
-"one_way_margin": 1.0,
-"shape": SubResource( 47 ),
-"shape_transform": Transform2D( 1, 0, 0, 1, 35, 35 )
-} ]
-49/z_index = 0
+24/z_index = 0

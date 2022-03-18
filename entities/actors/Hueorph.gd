@@ -3,7 +3,7 @@ extends KinematicBody2D
 const Poof := preload("res://entities/components/Poof.tscn")
 
 export (int) var _run_speed = 250
-export (int) var _base_jump_speed = -400
+export (int) var _base_jump_speed = -500
 export (int) var _gravity = 1200
 
 var _velocity = Vector2()
@@ -15,8 +15,9 @@ onready var _animated_sprite_beige: AnimatedSprite = $AnimatedSpriteBeige
 onready var _animated_sprite_blue: AnimatedSprite = $AnimatedSpriteBlue
 onready var _animated_sprite_green: AnimatedSprite = $AnimatedSpriteGreen
 onready var _animated_sprite_pink: AnimatedSprite = $AnimatedSpritePink
+onready var _hurtBox: Area2D = $HurtBox
 
-signal combine(colour)
+signal combine(colour, hexadecimal)
 
 func _ready() -> void:
 	_jump_speed = _base_jump_speed
@@ -75,3 +76,19 @@ func _create_poof_effect(colour: String, hexadecimal: String):
 
 	self.add_child(_poof)
 	_poof.global_position = global_position
+
+
+func _on_HurtBox_invincibility_ended():
+	pass
+
+
+func _on_HurtBox_invincibility_started():
+	pass # Replace with function body.
+
+
+func _on_HurtBox_area_entered(area):
+	HueorphGame.health -= area.damage
+	_hurtBox.start_invincibility(0.6)
+
+	#var playerHurtSound = PlayerHurtSound.instance()
+	#get_tree().current_scene.add_child(playerHurtSound)

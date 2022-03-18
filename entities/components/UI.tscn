@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://assets/game_theme.tres" type="Theme" id=1]
-[ext_resource path="res://assets/sprites/ui/hourglass.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/ui/hud_heartFull.png" type="Texture" id=2]
 [ext_resource path="res://entities/components/UI.gd" type="Script" id=3]
+[ext_resource path="res://assets/sprites/ui/hud_heartEmpty.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/tiles/coinGold.png" type="Texture" id=5]
 
 [node name="UI" type="Control"]
 anchor_right = 1.0
@@ -12,36 +14,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 0.899
+anchor_right = 1.0
+margin_left = -70.0
+margin_bottom = 70.0
+texture = ExtResource( 5 )
+
 [node name="Score" type="Label" parent="."]
 anchor_left = 1.0
+anchor_top = 0.028
 anchor_right = 1.0
-margin_left = -237.0
-margin_top = 19.0
-margin_right = -57.0
-margin_bottom = 54.0
+anchor_bottom = 0.037
+margin_left = -89.0
+margin_bottom = 35.0
 theme = ExtResource( 1 )
-text = "0"
-align = 2
+text = "1000"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="TextureRect" type="TextureRect" parent="."]
-visible = false
-margin_left = 30.0
-margin_top = 26.0
-margin_right = 94.0
-margin_bottom = 90.0
-rect_scale = Vector2( 0.5, 0.5 )
-texture = ExtResource( 2 )
+[node name="HeartUIEmpty" type="TextureRect" parent="."]
+margin_right = 53.0
+margin_bottom = 44.6
+texture = ExtResource( 4 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Label" type="Label" parent="TextureRect"]
-anchor_left = 1.0
-anchor_top = 0.101
-anchor_right = 2.611
-anchor_bottom = 0.43
-margin_top = 3.536
-margin_right = -18.104
-margin_bottom = 17.48
-theme = ExtResource( 1 )
-text = "5:00"
+[node name="HeartUIFull" type="TextureRect" parent="."]
+margin_right = 53.0
+margin_bottom = 44.6
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
