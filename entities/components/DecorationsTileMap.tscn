@@ -1,0 +1,38 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/sprites/tiles/mushroomRed.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/tiles/cactus.png" type="Texture" id=2]
+[ext_resource path="res://assets/sprites/tiles/plantPurple.png" type="Texture" id=3]
+[ext_resource path="res://assets/sprites/tiles/mushroomBrown.png" type="Texture" id=4]
+[ext_resource path="res://assets/sprites/tiles/rock.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/tiles/plant.png" type="Texture" id=6]
+[ext_resource path="res://assets/sprites/tiles/bush.png" type="Texture" id=7]
+
+[node name="Decorations" type="Node"]
+
+[node name="Bush" type="Sprite" parent="."]
+texture = ExtResource( 7 )
+
+[node name="Cactus" type="Sprite" parent="."]
+position = Vector2( 76, 0 )
+texture = ExtResource( 2 )
+
+[node name="MushroomBrown" type="Sprite" parent="."]
+position = Vector2( 153, 0 )
+texture = ExtResource( 4 )
+
+[node name="MushroomRed" type="Sprite" parent="."]
+position = Vector2( 230, 0 )
+texture = ExtResource( 1 )
+
+[node name="Plant" type="Sprite" parent="."]
+position = Vector2( 306, 1 )
+texture = ExtResource( 6 )
+
+[node name="PlantPurple" type="Sprite" parent="."]
+position = Vector2( 383, 1 )
+texture = ExtResource( 3 )
+
+[node name="Rock" type="Sprite" parent="."]
+position = Vector2( 460, 1 )
+texture = ExtResource( 5 )

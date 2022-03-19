@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://assets/sprites/tiles/coinGold.png" type="Texture" id=1]
+[ext_resource path="res://assets/sprites/tiles/gemYellow.png" type="Texture" id=1]
 [ext_resource path="res://entities/components/Coin.gd" type="Script" id=2]
 [ext_resource path="res://assets/sounds/handleCoins.ogg" type="AudioStream" id=3]
 

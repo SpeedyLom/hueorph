@@ -9,7 +9,6 @@ signal no_health
 signal health_changed(value)
 signal max_health_changed(value)
 
-
 func _on_HueorphGame_score_increase():
 	score += 1
 
@@ -37,3 +36,4 @@ func _reset_score():
 func reset_scores():
 	set_health(max_health)
 	_reset_score()
+

@@ -159,6 +159,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="GrassRoundRight"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRoundRight/StaticBody2D"]
+position = Vector2( 1, 1 )
 polygon = PoolVector2Array( -36, -36, -36, 34, -14, 31, 6, 25, 17, 19, 27, 9, 33, -4, 34, -12, 34, -30, 28, -36 )
 
 [node name="GrassRoundLeft" type="Sprite" parent="."]
@@ -173,6 +174,7 @@ __meta__ = {
 [node name="StaticBody2D" type="StaticBody2D" parent="GrassRoundLeft"]
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="GrassRoundLeft/StaticBody2D"]
+position = Vector2( 0, 1 )
 polygon = PoolVector2Array( 35, -36, -30, -36, -35, -31, -35, -10, -32, 0, -26, 12, -15, 20, -2, 27, 18, 32, 35, 34 )
 
 [node name="Dirt" type="Sprite" parent="."]
@@ -213,7 +215,6 @@ __meta__ = {
 }
 
 [node name="StaticBody2D" type="StaticBody2D" parent="LogPlatform"]
-visible = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LogPlatform/StaticBody2D"]
 position = Vector2( 0, -22 )

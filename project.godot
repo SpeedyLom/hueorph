@@ -27,13 +27,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Hueorph"
-run/main_scene="res://entities/levels/Level0.tscn"
+run/main_scene="res://entities/menus/Splash.tscn"
 config/icon="res://icon.png"
 
 [autoload]
 
 HueorphGame="*res://entities/components/HueorphGame.gd"
-BackgroundMusic="*res://entities/components/BackgroundMusic.tscn"
 
 [display]
 
@@ -41,6 +40,10 @@ window/size/width=800
 
 [input]
 
+ui_select={
+"deadzone": 0.5,
+"events": [  ]
+}
 ui_left={
 "deadzone": 0.5,
 "events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777231,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
@@ -73,6 +76,14 @@ ui_down={
 , Object(InputEventJoypadMotion,"resource_local_to_scene":false,"resource_name":"","device":0,"axis":1,"axis_value":1.0,"script":null)
  ]
 }
+pause={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":80,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777225,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+, Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+, Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":16777217,"physical_scancode":0,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [layer_names]
 
@@ -81,6 +92,7 @@ ui_down={
 2d_physics/layer_3="enemy"
 2d_physics/layer_4="enemy_collision"
 2d_physics/layer_5="player_hurtbox"
+2d_physics/layer_6="enemy_hurtbox"
 
 [physics]
 

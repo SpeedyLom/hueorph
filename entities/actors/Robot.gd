@@ -2,8 +2,9 @@ class_name Robot
 extends KinematicBody2D
 
 enum {
-	IDLE
+	IDLE,
 	CHASE,
+	HURT,
 }
 
 const Poof := preload("res://entities/components/Poof.tscn")
@@ -16,6 +17,7 @@ var _velocity: Vector2 = Vector2()
 
 onready var _player_detection_area: Area2D = $PlayerDetectionArea
 onready var _animated_sprite: AnimatedSprite = $AnimatedSprite
+onready var _audio_stream_player_2d: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 func _physics_process(delta: float) -> void:
 	match _state:
@@ -24,6 +26,9 @@ func _physics_process(delta: float) -> void:
 
 		CHASE:
 			_chase_player(delta)
+		HURT:
+			_animated_sprite.animation = 'hurt'
+			return
 
 	_move(delta)
 
@@ -90,14 +95,30 @@ func _move(delta: float) -> void:
 
 
 func _on_HitBox_area_entered(area):
+	_state = HURT
+	_audio_stream_player_2d.play()
 	_create_poof_effect()
 
 
 func _create_poof_effect():
 	var _poof := Poof.instance()
-	_poof.connect('animation_finished', self, "queue_free")
 
 	_poof.change_colour(Color('#5393c5'))
 
 	self.add_child(_poof)
 	_poof.global_position = global_position
+
+
+func _on_AnimatedSprite_animation_finished():
+	if _animated_sprite.animation == 'hurt':
+		_animated_sprite.hide()
+
+
+func _on_AudioStreamPlayer2D_finished():
+	queue_free()
+
+
+func _on_HurtBox_area_entered(area):
+	$CollisionShape2D.queue_free()
+	$HitBox/CollisionShape2D.queue_free()
+	_on_HitBox_area_entered(area)

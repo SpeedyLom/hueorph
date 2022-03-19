@@ -4,7 +4,7 @@
 [ext_resource path="res://assets/sprites/ui/hud_heartFull.png" type="Texture" id=2]
 [ext_resource path="res://entities/components/UI.gd" type="Script" id=3]
 [ext_resource path="res://assets/sprites/ui/hud_heartEmpty.png" type="Texture" id=4]
-[ext_resource path="res://assets/sprites/tiles/coinGold.png" type="Texture" id=5]
+[ext_resource path="res://assets/sprites/tiles/gemYellow.png" type="Texture" id=5]
 
 [node name="UI" type="Control"]
 anchor_right = 1.0
