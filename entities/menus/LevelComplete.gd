@@ -9,3 +9,11 @@ func _on_LevelComplete_visibility_changed():
 		get_tree().paused = true
 		$Panel/VBoxContainer/RestartButton.grab_focus()
 
+		var time = HueorphGame.time
+		var seconds = fmod(time, 60)
+		var minutes = fmod(time, 60 * 60) / 60
+
+		$Panel/VBoxContainer/HBoxContainer2/TimeLabel.text = "%02d:%02d" % [minutes, seconds]
+
+		$Panel/VBoxContainer/HBoxContainer/ScoreLabel.text = "%d" % [HueorphGame.score]
+

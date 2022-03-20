@@ -71,7 +71,6 @@ func _physics_process(delta):
 
 
 func _on_Hueorph_combine(colour: String, hexadecimal: String):
-	return
 	if _colour != 'beige':
 		_audio_stream_player_2d.play()
 		_create_poof_effect(colour, hexadecimal)

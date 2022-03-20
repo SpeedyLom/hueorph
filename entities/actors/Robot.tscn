@@ -27,14 +27,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "walk",
-"speed": 7.0
-}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "hurt",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 13 ), ExtResource( 1 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "attack",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ) ],
@@ -42,10 +42,10 @@ animations = [ {
 "name": "die",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ), ExtResource( 1 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 11 ) ],
 "loop": true,
-"name": "attack",
-"speed": 5.0
+"name": "walk",
+"speed": 7.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -93,6 +93,7 @@ shape = SubResource( 7 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 18 )
+bus = "Sounds"
 
 [node name="HurtBox" parent="." instance=ExtResource( 19 )]
 collision_layer = 32

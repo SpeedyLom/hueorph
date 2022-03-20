@@ -46,7 +46,8 @@ __meta__ = {
 [node name="ContinueButton" type="Button" parent="VBoxContainer"]
 margin_right = 408.0
 margin_bottom = 41.0
-focus_neighbour_top = NodePath("../RestartButton")
+focus_neighbour_top = NodePath("../HBoxContainer2/SoundSlider")
+focus_neighbour_bottom = NodePath("../RestartButton")
 theme = ExtResource( 1 )
 text = "Continue"
 
@@ -54,9 +55,56 @@ text = "Continue"
 margin_top = 45.0
 margin_right = 408.0
 margin_bottom = 86.0
-focus_neighbour_bottom = NodePath("../ContinueButton")
+focus_neighbour_top = NodePath("../ContinueButton")
+focus_neighbour_bottom = NodePath("../HBoxContainer/MusicSlider")
 theme = ExtResource( 1 )
 text = "Restart"
 
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 90.0
+margin_right = 408.0
+margin_bottom = 125.0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+margin_right = 117.0
+margin_bottom = 35.0
+theme = ExtResource( 1 )
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="VBoxContainer/HBoxContainer"]
+margin_left = 121.0
+margin_right = 408.0
+margin_bottom = 16.0
+focus_neighbour_top = NodePath(".")
+focus_neighbour_bottom = NodePath("../../HBoxContainer2/SoundSlider")
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+min_value = -40.0
+max_value = 0.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 129.0
+margin_right = 408.0
+margin_bottom = 164.0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+margin_right = 125.0
+margin_bottom = 35.0
+theme = ExtResource( 1 )
+text = "Sound"
+
+[node name="SoundSlider" type="HSlider" parent="VBoxContainer/HBoxContainer2"]
+margin_left = 129.0
+margin_right = 408.0
+margin_bottom = 16.0
+focus_neighbour_top = NodePath("../../HBoxContainer/MusicSlider")
+focus_neighbour_bottom = NodePath("../../ContinueButton")
+size_flags_horizontal = 3
+theme = ExtResource( 1 )
+min_value = -40.0
+max_value = 0.0
+
 [connection signal="pressed" from="VBoxContainer/ContinueButton" to="." method="_on_ContinueButton_pressed"]
 [connection signal="pressed" from="VBoxContainer/RestartButton" to="." method="_on_RestartButton_pressed"]
+[connection signal="value_changed" from="VBoxContainer/HBoxContainer/MusicSlider" to="." method="_on_MusicSlider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/HBoxContainer2/SoundSlider" to="." method="_on_SoundSlider_value_changed"]

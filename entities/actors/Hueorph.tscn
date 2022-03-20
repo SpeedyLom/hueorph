@@ -32,11 +32,6 @@ animations = [ {
 "name": "idle",
 "speed": 6.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "walk",
-"speed": 6.0
-}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "jump",
@@ -46,6 +41,11 @@ animations = [ {
 "loop": true,
 "name": "hurt",
 "speed": 1.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "walk",
+"speed": 6.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -54,11 +54,6 @@ animations = [ {
 "loop": true,
 "name": "idle",
 "speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "walk",
-"speed": 6.0
 }, {
 "frames": [ ExtResource( 11 ) ],
 "loop": true,
@@ -69,6 +64,11 @@ animations = [ {
 "loop": true,
 "name": "hurt",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 19 ) ],
+"loop": true,
+"name": "walk",
+"speed": 6.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
@@ -76,11 +76,6 @@ animations = [ {
 "frames": [ ExtResource( 10 ) ],
 "loop": true,
 "name": "idle",
-"speed": 6.0
-}, {
-"frames": [ ExtResource( 18 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "walk",
 "speed": 6.0
 }, {
 "frames": [ ExtResource( 5 ) ],
@@ -92,6 +87,11 @@ animations = [ {
 "loop": true,
 "name": "hurt",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 18 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "walk",
+"speed": 6.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
@@ -99,11 +99,6 @@ animations = [ {
 "frames": [ ExtResource( 17 ) ],
 "loop": true,
 "name": "idle",
-"speed": 6.0
-}, {
-"frames": [ ExtResource( 20 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "walk",
 "speed": 6.0
 }, {
 "frames": [ ExtResource( 12 ) ],
@@ -115,6 +110,11 @@ animations = [ {
 "loop": true,
 "name": "hurt",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 20 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "walk",
+"speed": 6.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
@@ -173,6 +173,7 @@ shape = SubResource( 6 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource( 23 )
+bus = "Sounds"
 
 [node name="HitBox" parent="." instance=ExtResource( 24 )]
 collision_layer = 0

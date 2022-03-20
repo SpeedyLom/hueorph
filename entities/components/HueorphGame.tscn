@@ -5,6 +5,4 @@
 [node name="HueorphGame" type="Node"]
 script = ExtResource( 1 )
 
-[node name="GameTimer" type="Timer" parent="."]
-
 [connection signal="score_increase" from="." to="." method="_on_HueorphGame_score_increase"]

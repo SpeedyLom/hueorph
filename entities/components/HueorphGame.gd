@@ -1,5 +1,6 @@
 extends Node
 
+var time = 0
 var score = 0
 export(int) var max_health := 3 setget set_max_health
 var health := max_health setget set_health
